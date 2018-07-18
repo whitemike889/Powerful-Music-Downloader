@@ -95,10 +95,9 @@ namespace MusicDownloader.Windows
             CurrentSource = _loadedPlugins[plListSelection.SelectedIndex];
             QualityDropDown.Items.Clear();
             QualityDropDown.Items.AddRange(CurrentSource.MusicQualityList);
-            QualityDropDown.SelectedIndex = 0;
-            CurrentQuality = QualityDropDown.SelectedItem.ToString();
+            CurrentQuality = QualityDropDown.SelectedItem?.ToString() ?? "";
             plAuthor.Text = CurrentSource.Author;
-            plVer.Text = CurrentSource.MusicSourceVersion; ;
+            plVer.Text = CurrentSource.MusicSourceVersion;
             interfaceVer.Text = CurrentSource.InterfaceVersion;
             formats.Text = string.Join("/", CurrentSource.MusicQualityList);
         }

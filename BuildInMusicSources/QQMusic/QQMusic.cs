@@ -4,7 +4,7 @@ using MusicDownloader.Interfaces.Results;
 using System;
 using System.Linq;
 
-namespace QQMusic
+namespace BuildInPlugins
 {
     public class QQMusic : IMusicSource
     {

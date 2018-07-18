@@ -6,7 +6,7 @@ using MusicDownloader;
 using MusicDownloader.Interfaces.Results;
 
 #pragma warning disable IDE1006 // 命名样式
-namespace QQMusic
+namespace BuildInPlugins
 {
     public class _QQMusicSearchResultInternal
     {

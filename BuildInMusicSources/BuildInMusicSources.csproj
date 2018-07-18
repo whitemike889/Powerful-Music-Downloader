@@ -7,7 +7,7 @@
     <ProjectGuid>{9287A3C9-09E3-4E51-8008-E9B1D1EC8C0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicDownloader</RootNamespace>
+    <RootNamespace>BuildInPlugins</RootNamespace>
     <AssemblyName>BuildInMusicSources</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NeteaseCloudMusic\Netease.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QQMusic\QQMusic.cs" />
     <Compile Include="QQMusic\QQMusicSearchResult.cs" />
