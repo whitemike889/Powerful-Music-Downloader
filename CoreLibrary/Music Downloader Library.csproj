@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Converter.cs" />
     <Compile Include="DownloadStatus.cs" />
-    <Compile Include="HttpHelper.cs" />
     <Compile Include="Interfaces\IMusicSource.cs" />
     <Compile Include="Interfaces\Results.cs" />
     <Compile Include="Interfaces\SinsythDownloadData.cs" />

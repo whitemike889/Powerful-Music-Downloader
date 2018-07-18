@@ -4,6 +4,7 @@ namespace MusicDownloader
 {
     public sealed class DownloadStatus : INotifyPropertyChanged
     {
+        public int IndexOfList = 0;
         private long _Max = long.MaxValue;
         private long _Current = 0L;
         private string _Percent = "0%";

@@ -179,7 +179,7 @@ namespace QQMusic
             public Mv1 mv { get; set; }
             public string name { get; set; }
             public int newStatus { get; set; }
-            public int nt { get; set; }
+            public long nt { get; set; }
             public Pay1 pay { get; set; }
             public int pure { get; set; }
             public Singer[] singer { get; set; }

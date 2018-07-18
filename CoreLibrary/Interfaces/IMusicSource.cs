@@ -7,11 +7,17 @@ namespace MusicDownloader.Interfaces
     public interface IMusicSource
     {
         string MusicSourceName { get; }
-        WebRequestData GetResearchMethod(string keyword, int skip, int limit);
-        SearchResults GetSearchResults(string resultJSON);
-        WebRequestData GetDownloadMethod(string MusicID, string quality);
-        DownloadLinkResult GetDownloadLink(string resultJSON);
+        string Author { get; }
 
+        string InterfaceVersion { get; }
+        string MusicSourceVersion { get; }
+
+        string[] MusicQualityList { get; }
+        WebRequestData GetResearchMethod(string keyword, int skip, int limit);
+        WebRequestData GetDownloadMethod(string MusicID, string quality);
+        
+        DownloadLinkResult GetDownloadLink(string resultJSON);
+        SearchResults GetSearchResults(string resultJSON);
     }
 
     public class WebRequestData
